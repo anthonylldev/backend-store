@@ -3,10 +3,12 @@ package com.anthonylldev.store.infrastructure.persistence;
 import com.anthonylldev.store.domain.entity.Item;
 import com.anthonylldev.store.domain.persistence.ItemPersistence;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class ItemPersistenceImpl implements ItemPersistence {
     private final ItemRepository itemRepository;
 
