@@ -3,10 +3,12 @@ package com.anthonylldev.store.infrastructure.persistence;
 import com.anthonylldev.store.domain.entity.Category;
 import com.anthonylldev.store.domain.persistence.CategoryPersistence;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class CategoryPersistenceImpl implements CategoryPersistence {
     private final CategoryRepository categoryRepository;
 
