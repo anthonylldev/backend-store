@@ -7,8 +7,8 @@ import java.util.Optional;
 
 public interface ItemPersistence {
 
-    List<Item> getAllItemsByCategory(Long idCategory);
-    Optional<Item> getItemById(Long idItem);
+    List<Item> getAllItemsByCategory(Long categoryId);
+    Optional<Item> getItemById(Long itemId);
     Item saveItem(Item item);
-    void deleteItem(Long idItem);
+    void deleteItem(Long itemId);
 }

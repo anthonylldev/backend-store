@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface CategoryPersistence {
 
     List<Category> getAllCategories();
-    Optional<Category> getCategoryById(Long idCategory);
+    Optional<Category> getCategoryById(Long categoryId);
     Category saveCategory(Category category);
-    void deleteCategory(Long idCategory);
+    void deleteCategory(Long categoryId);
 }
