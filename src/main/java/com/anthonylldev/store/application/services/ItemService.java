@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public interface ItemService {
+    List<ItemDto> getAllItems();
     List<ItemDto> getAllItemsByCategory(Long categoryId);
     Optional<ItemDto> getItemById(Long itemId);
     ItemDto saveItem(ItemDto itemDto);
